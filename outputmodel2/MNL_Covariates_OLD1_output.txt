@@ -1,0 +1,652 @@
+Model run by mmejiaj using Apollo 0.2.8 on R 4.2.2 for Darwin.
+www.ApolloChoiceModelling.com
+
+Model name                                  : MNL_Covariates
+Model description                           : MNL model with interactions
+Model run at                                : 2023-03-22 07:51:34
+Estimation method                           : bfgs
+Model diagnosis                             : successful convergence 
+Number of individuals                       : 2897
+Number of rows in database                  : 2897
+Number of modelled outcomes                 : 2897
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -3182.68
+LL at equal shares, LL(0)                   : -3182.68
+LL at observed shares, LL(C)                : -2428.28
+LL(final)                                   : -1878.04
+Rho-squared vs equal shares                  :  0.4099 
+Adj.Rho-squared vs equal shares              :  0.4068 
+Rho-squared vs observed shares               :  0.2266 
+Adj.Rho-squared vs observed shares           :  0.2225 
+AIC                                         :  3776.08 
+BIC                                         :  3835.79 
+
+Estimated parameters                        :  10
+Time taken (hh:mm:ss)                       :  00:00:1.88 
+     pre-estimation                         :  00:00:0.82 
+     estimation                             :  00:00:0.49 
+     post-estimation                        :  00:00:0.57 
+Iterations                                  :  20  
+Min abs eigenvalue of Hessian               :  30.51232 
+
+Unconstrained optimisation.
+
+These outputs have had the scaling used in estimation applied to them.
+Estimates:
+                                     Estimate        s.e.   t.rat.(0)  p(2-sided)
+asc_NonStop                           0.00000          NA          NA          NA
+asc_1Stop                            -1.36015     0.10793     -12.603       0.000
+asc_1StopChange                      -1.85871     0.13760     -13.508       0.000
+asc_1StopChange_Shift_Income          0.47003     0.12498       3.761  1.6924e-04
+b_StopPenaltyHours                   -0.26535     0.07613      -3.485  4.9143e-04
+b_StopPenaltyHours_Shift_Business    -0.31299     0.08017      -3.904   9.452e-05
+b_Fare                               -0.01951  7.6990e-04     -25.340       0.000
+b_Legroom2                            0.38441     0.08774       4.381   1.181e-05
+b_Legroom3                            0.42430     0.08639       4.911   9.052e-07
+b_Legroom4                            0.66960     0.08805       7.605   2.864e-14
+b_DiffTime                           -0.10913     0.01148      -9.510       0.000
+                                     Rob.s.e. Rob.t.rat.(0)  p(2-sided)
+asc_NonStop                                NA            NA          NA
+asc_1Stop                             0.10637       -12.787       0.000
+asc_1StopChange                       0.13811       -13.458       0.000
+asc_1StopChange_Shift_Income          0.12702         3.700  2.1532e-04
+b_StopPenaltyHours                    0.07596        -3.493  4.7719e-04
+b_StopPenaltyHours_Shift_Business     0.08338        -3.754  1.7417e-04
+b_Fare                             8.9618e-04       -21.769       0.000
+b_Legroom2                            0.08977         4.282   1.850e-05
+b_Legroom3                            0.08974         4.728   2.269e-06
+b_Legroom4                            0.09297         7.202   5.929e-13
+b_DiffTime                            0.01221        -8.935       0.000
+
+
+Overview of choices for MNL model component :
+                                 NonStop OneStop OneStopChange
+Times available                  2897.00  2897.0       2897.00
+Times chosen                     1990.00   475.0        432.00
+Percentage chosen overall          68.69    16.4         14.91
+Percentage chosen when available   68.69    16.4         14.91
+
+
+Classical covariance matrix:
+                                                          asc_1Stop
+asc_1Stop                                                  0.011648
+asc_1StopChange                                            0.009157
+asc_1StopChange_Shift_Income                            -1.6579e-04
+b_StopPenaltyHours                                        -0.006495
+b_StopPenaltyHours_Shift_Business                       -2.1489e-04
+b_Fare                                                    1.266e-05
+b_Legroom2                                              -5.1457e-04
+b_Legroom3                                              -3.3442e-04
+b_Legroom4                                              -7.2797e-04
+b_DiffTime                                                8.245e-05
+                                                    asc_1StopChange
+asc_1Stop                                                  0.009157
+asc_1StopChange                                            0.018933
+asc_1StopChange_Shift_Income                              -0.010461
+b_StopPenaltyHours                                        -0.006232
+b_StopPenaltyHours_Shift_Business                       -6.6244e-04
+b_Fare                                                    2.057e-05
+b_Legroom2                                              -5.0599e-04
+b_Legroom3                                              -3.6694e-04
+b_Legroom4                                                -0.001042
+b_DiffTime                                                9.491e-05
+                                       asc_1StopChange_Shift_Income
+asc_1Stop                                               -1.6579e-04
+asc_1StopChange                                            -0.01046
+asc_1StopChange_Shift_Income                                0.01562
+b_StopPenaltyHours                                      -2.4232e-04
+b_StopPenaltyHours_Shift_Business                        7.0127e-04
+b_Fare                                                   -6.694e-06
+b_Legroom2                                               -3.631e-05
+b_Legroom3                                               -6.623e-05
+b_Legroom4                                               3.4591e-04
+b_DiffTime                                               -1.475e-05
+                                                 b_StopPenaltyHours
+asc_1Stop                                                 -0.006495
+asc_1StopChange                                           -0.006232
+asc_1StopChange_Shift_Income                            -2.4232e-04
+b_StopPenaltyHours                                         0.005796
+b_StopPenaltyHours_Shift_Business                         -0.001352
+b_Fare                                                    2.960e-06
+b_Legroom2                                                7.525e-05
+b_Legroom3                                              -1.4746e-04
+b_Legroom4                                                4.242e-05
+b_DiffTime                                               -1.669e-05
+                                  b_StopPenaltyHours_Shift_Business
+asc_1Stop                                               -2.1489e-04
+asc_1StopChange                                         -6.6244e-04
+asc_1StopChange_Shift_Income                             7.0127e-04
+b_StopPenaltyHours                                        -0.001352
+b_StopPenaltyHours_Shift_Business                          0.006427
+b_Fare                                                    2.762e-06
+b_Legroom2                                              -1.7552e-04
+b_Legroom3                                               -4.932e-05
+b_Legroom4                                               -7.472e-05
+b_DiffTime                                                2.483e-05
+                                                             b_Fare
+asc_1Stop                                                 1.266e-05
+asc_1StopChange                                           2.057e-05
+asc_1StopChange_Shift_Income                             -6.694e-06
+b_StopPenaltyHours                                        2.960e-06
+b_StopPenaltyHours_Shift_Business                         2.762e-06
+b_Fare                                                    5.928e-07
+b_Legroom2                                               -3.640e-06
+b_Legroom3                                               -4.623e-06
+b_Legroom4                                               -4.699e-06
+b_DiffTime                                                9.939e-07
+                                                         b_Legroom2
+asc_1Stop                                               -5.1457e-04
+asc_1StopChange                                         -5.0599e-04
+asc_1StopChange_Shift_Income                             -3.631e-05
+b_StopPenaltyHours                                        7.525e-05
+b_StopPenaltyHours_Shift_Business                       -1.7552e-04
+b_Fare                                                   -3.640e-06
+b_Legroom2                                                 0.007699
+b_Legroom3                                                 0.003706
+b_Legroom4                                                 0.003950
+b_DiffTime                                               -5.117e-06
+                                                         b_Legroom3
+asc_1Stop                                               -3.3442e-04
+asc_1StopChange                                         -3.6694e-04
+asc_1StopChange_Shift_Income                             -6.623e-05
+b_StopPenaltyHours                                      -1.4746e-04
+b_StopPenaltyHours_Shift_Business                        -4.932e-05
+b_Fare                                                   -4.623e-06
+b_Legroom2                                                 0.003706
+b_Legroom3                                                 0.007464
+b_Legroom4                                                 0.003905
+b_DiffTime                                               -5.803e-05
+                                                         b_Legroom4
+asc_1Stop                                               -7.2797e-04
+asc_1StopChange                                           -0.001042
+asc_1StopChange_Shift_Income                             3.4591e-04
+b_StopPenaltyHours                                        4.242e-05
+b_StopPenaltyHours_Shift_Business                        -7.472e-05
+b_Fare                                                   -4.699e-06
+b_Legroom2                                                 0.003950
+b_Legroom3                                                 0.003905
+b_Legroom4                                                 0.007753
+b_DiffTime                                               -4.312e-05
+                                                         b_DiffTime
+asc_1Stop                                                 8.245e-05
+asc_1StopChange                                           9.491e-05
+asc_1StopChange_Shift_Income                             -1.475e-05
+b_StopPenaltyHours                                       -1.669e-05
+b_StopPenaltyHours_Shift_Business                         2.483e-05
+b_Fare                                                    9.939e-07
+b_Legroom2                                               -5.117e-06
+b_Legroom3                                               -5.803e-05
+b_Legroom4                                               -4.312e-05
+b_DiffTime                                               1.3169e-04
+
+Robust covariance matrix:
+                                                          asc_1Stop
+asc_1Stop                                                  0.011315
+asc_1StopChange                                            0.008860
+asc_1StopChange_Shift_Income                            -1.3252e-04
+b_StopPenaltyHours                                        -0.006419
+b_StopPenaltyHours_Shift_Business                       -1.8033e-04
+b_Fare                                                    9.133e-06
+b_Legroom2                                              -5.3991e-04
+b_Legroom3                                              -5.4145e-04
+b_Legroom4                                              -7.2926e-04
+b_DiffTime                                                2.767e-05
+                                                    asc_1StopChange
+asc_1Stop                                                  0.008860
+asc_1StopChange                                            0.019074
+asc_1StopChange_Shift_Income                              -0.011102
+b_StopPenaltyHours                                        -0.006127
+b_StopPenaltyHours_Shift_Business                       -8.0470e-04
+b_Fare                                                    1.551e-05
+b_Legroom2                                              -2.3375e-04
+b_Legroom3                                              -4.8872e-04
+b_Legroom4                                              -9.6223e-04
+b_DiffTime                                                3.457e-05
+                                       asc_1StopChange_Shift_Income
+asc_1Stop                                               -1.3252e-04
+asc_1StopChange                                            -0.01110
+asc_1StopChange_Shift_Income                                0.01614
+b_StopPenaltyHours                                      -2.8670e-04
+b_StopPenaltyHours_Shift_Business                        7.9460e-04
+b_Fare                                                   -7.871e-06
+b_Legroom2                                              -3.1832e-04
+b_Legroom3                                               -6.363e-05
+b_Legroom4                                               3.7019e-04
+b_DiffTime                                                6.482e-06
+                                                 b_StopPenaltyHours
+asc_1Stop                                                 -0.006419
+asc_1StopChange                                           -0.006127
+asc_1StopChange_Shift_Income                            -2.8670e-04
+b_StopPenaltyHours                                         0.005770
+b_StopPenaltyHours_Shift_Business                         -0.001343
+b_Fare                                                    5.532e-06
+b_Legroom2                                                3.855e-05
+b_Legroom3                                               -1.666e-05
+b_Legroom4                                               -4.823e-05
+b_DiffTime                                                1.296e-05
+                                  b_StopPenaltyHours_Shift_Business
+asc_1Stop                                               -1.8033e-04
+asc_1StopChange                                         -8.0470e-04
+asc_1StopChange_Shift_Income                             7.9460e-04
+b_StopPenaltyHours                                        -0.001343
+b_StopPenaltyHours_Shift_Business                          0.006952
+b_Fare                                                    5.575e-06
+b_Legroom2                                              -2.1839e-04
+b_Legroom3                                              -1.5411e-04
+b_Legroom4                                               -3.223e-05
+b_DiffTime                                                1.148e-05
+                                                             b_Fare
+asc_1Stop                                                 9.133e-06
+asc_1StopChange                                           1.551e-05
+asc_1StopChange_Shift_Income                             -7.871e-06
+b_StopPenaltyHours                                        5.532e-06
+b_StopPenaltyHours_Shift_Business                         5.575e-06
+b_Fare                                                    8.031e-07
+b_Legroom2                                               -1.083e-06
+b_Legroom3                                               -3.889e-06
+b_Legroom4                                               -6.634e-06
+b_DiffTime                                                8.518e-07
+                                                         b_Legroom2
+asc_1Stop                                               -5.3991e-04
+asc_1StopChange                                         -2.3375e-04
+asc_1StopChange_Shift_Income                            -3.1832e-04
+b_StopPenaltyHours                                        3.855e-05
+b_StopPenaltyHours_Shift_Business                       -2.1839e-04
+b_Fare                                                   -1.083e-06
+b_Legroom2                                                 0.008058
+b_Legroom3                                                 0.004001
+b_Legroom4                                                 0.004389
+b_DiffTime                                                4.453e-06
+                                                         b_Legroom3
+asc_1Stop                                               -5.4145e-04
+asc_1StopChange                                         -4.8872e-04
+asc_1StopChange_Shift_Income                             -6.363e-05
+b_StopPenaltyHours                                       -1.666e-05
+b_StopPenaltyHours_Shift_Business                       -1.5411e-04
+b_Fare                                                   -3.889e-06
+b_Legroom2                                                 0.004001
+b_Legroom3                                                 0.008054
+b_Legroom4                                                 0.004535
+b_DiffTime                                               -5.354e-05
+                                                         b_Legroom4
+asc_1Stop                                               -7.2926e-04
+asc_1StopChange                                         -9.6223e-04
+asc_1StopChange_Shift_Income                             3.7019e-04
+b_StopPenaltyHours                                       -4.823e-05
+b_StopPenaltyHours_Shift_Business                        -3.223e-05
+b_Fare                                                   -6.634e-06
+b_Legroom2                                                 0.004389
+b_Legroom3                                                 0.004535
+b_Legroom4                                                 0.008644
+b_DiffTime                                               -5.330e-05
+                                                         b_DiffTime
+asc_1Stop                                                 2.767e-05
+asc_1StopChange                                           3.457e-05
+asc_1StopChange_Shift_Income                              6.482e-06
+b_StopPenaltyHours                                        1.296e-05
+b_StopPenaltyHours_Shift_Business                         1.148e-05
+b_Fare                                                    8.518e-07
+b_Legroom2                                                4.453e-06
+b_Legroom3                                               -5.354e-05
+b_Legroom4                                               -5.330e-05
+b_DiffTime                                               1.4920e-04
+
+Classical correlation matrix:
+                                                          asc_1Stop
+asc_1Stop                                                   1.00000
+asc_1StopChange                                             0.61663
+asc_1StopChange_Shift_Income                               -0.01229
+b_StopPenaltyHours                                         -0.79043
+b_StopPenaltyHours_Shift_Business                          -0.02484
+b_Fare                                                      0.15231
+b_Legroom2                                                 -0.05434
+b_Legroom3                                                 -0.03587
+b_Legroom4                                                 -0.07660
+b_DiffTime                                                  0.06658
+                                                    asc_1StopChange
+asc_1Stop                                                   0.61663
+asc_1StopChange                                             1.00000
+asc_1StopChange_Shift_Income                               -0.60829
+b_StopPenaltyHours                                         -0.59492
+b_StopPenaltyHours_Shift_Business                          -0.06005
+b_Fare                                                      0.19413
+b_Legroom2                                                 -0.04191
+b_Legroom3                                                 -0.03087
+b_Legroom4                                                 -0.08602
+b_DiffTime                                                  0.06011
+                                       asc_1StopChange_Shift_Income
+asc_1Stop                                                 -0.012292
+asc_1StopChange                                           -0.608294
+asc_1StopChange_Shift_Income                               1.000000
+b_StopPenaltyHours                                        -0.025468
+b_StopPenaltyHours_Shift_Business                          0.069995
+b_Fare                                                    -0.069571
+b_Legroom2                                                -0.003311
+b_Legroom3                                                -0.006134
+b_Legroom4                                                 0.031434
+b_DiffTime                                                -0.010284
+                                                 b_StopPenaltyHours
+asc_1Stop                                                 -0.790434
+asc_1StopChange                                           -0.594921
+asc_1StopChange_Shift_Income                              -0.025468
+b_StopPenaltyHours                                         1.000000
+b_StopPenaltyHours_Shift_Business                         -0.221529
+b_Fare                                                     0.050497
+b_Legroom2                                                 0.011265
+b_Legroom3                                                -0.022420
+b_Legroom4                                                 0.006328
+b_DiffTime                                                -0.019105
+                                  b_StopPenaltyHours_Shift_Business
+asc_1Stop                                                 -0.024837
+asc_1StopChange                                           -0.060054
+asc_1StopChange_Shift_Income                               0.069995
+b_StopPenaltyHours                                        -0.221529
+b_StopPenaltyHours_Shift_Business                          1.000000
+b_Fare                                                     0.044755
+b_Legroom2                                                -0.024953
+b_Legroom3                                                -0.007122
+b_Legroom4                                                -0.010586
+b_DiffTime                                                 0.026989
+                                                             b_Fare
+asc_1Stop                                                   0.15231
+asc_1StopChange                                             0.19413
+asc_1StopChange_Shift_Income                               -0.06957
+b_StopPenaltyHours                                          0.05050
+b_StopPenaltyHours_Shift_Business                           0.04475
+b_Fare                                                      1.00000
+b_Legroom2                                                 -0.05389
+b_Legroom3                                                 -0.06950
+b_Legroom4                                                 -0.06931
+b_DiffTime                                                  0.11250
+                                                         b_Legroom2
+asc_1Stop                                                 -0.054339
+asc_1StopChange                                           -0.041910
+asc_1StopChange_Shift_Income                              -0.003311
+b_StopPenaltyHours                                         0.011265
+b_StopPenaltyHours_Shift_Business                         -0.024953
+b_Fare                                                    -0.053890
+b_Legroom2                                                 1.000000
+b_Legroom3                                                 0.488947
+b_Legroom4                                                 0.511247
+b_DiffTime                                                -0.005082
+                                                         b_Legroom3
+asc_1Stop                                                 -0.035866
+asc_1StopChange                                           -0.030867
+asc_1StopChange_Shift_Income                              -0.006134
+b_StopPenaltyHours                                        -0.022420
+b_StopPenaltyHours_Shift_Business                         -0.007122
+b_Fare                                                    -0.069499
+b_Legroom2                                                 0.488947
+b_Legroom3                                                 1.000000
+b_Legroom4                                                 0.513353
+b_DiffTime                                                -0.058532
+                                                         b_Legroom4
+asc_1Stop                                                 -0.076603
+asc_1StopChange                                           -0.086023
+asc_1StopChange_Shift_Income                               0.031434
+b_StopPenaltyHours                                         0.006328
+b_StopPenaltyHours_Shift_Business                         -0.010586
+b_Fare                                                    -0.069312
+b_Legroom2                                                 0.511247
+b_Legroom3                                                 0.513353
+b_Legroom4                                                 1.000000
+b_DiffTime                                                -0.042673
+                                                         b_DiffTime
+asc_1Stop                                                  0.066575
+asc_1StopChange                                            0.060107
+asc_1StopChange_Shift_Income                              -0.010284
+b_StopPenaltyHours                                        -0.019105
+b_StopPenaltyHours_Shift_Business                          0.026989
+b_Fare                                                     0.112496
+b_Legroom2                                                -0.005082
+b_Legroom3                                                -0.058532
+b_Legroom4                                                -0.042673
+b_DiffTime                                                 1.000000
+
+Robust correlation matrix:
+                                                          asc_1Stop
+asc_1Stop                                                  1.000000
+asc_1StopChange                                            0.603107
+asc_1StopChange_Shift_Income                              -0.009808
+b_StopPenaltyHours                                        -0.794439
+b_StopPenaltyHours_Shift_Business                         -0.020333
+b_Fare                                                     0.095808
+b_Legroom2                                                -0.056542
+b_Legroom3                                                -0.056718
+b_Legroom4                                                -0.073740
+b_DiffTime                                                 0.021293
+                                                    asc_1StopChange
+asc_1Stop                                                   0.60311
+asc_1StopChange                                             1.00000
+asc_1StopChange_Shift_Income                               -0.63286
+b_StopPenaltyHours                                         -0.58399
+b_StopPenaltyHours_Shift_Business                          -0.06988
+b_Fare                                                      0.12528
+b_Legroom2                                                 -0.01885
+b_Legroom3                                                 -0.03943
+b_Legroom4                                                 -0.07494
+b_DiffTime                                                  0.02049
+                                       asc_1StopChange_Shift_Income
+asc_1Stop                                                 -0.009808
+asc_1StopChange                                           -0.632855
+asc_1StopChange_Shift_Income                               1.000000
+b_StopPenaltyHours                                        -0.029713
+b_StopPenaltyHours_Shift_Business                          0.075025
+b_Fare                                                    -0.069140
+b_Legroom2                                                -0.027916
+b_Legroom3                                                -0.005582
+b_Legroom4                                                 0.031346
+b_DiffTime                                                 0.004178
+                                                 b_StopPenaltyHours
+asc_1Stop                                                 -0.794439
+asc_1StopChange                                           -0.583989
+asc_1StopChange_Shift_Income                              -0.029713
+b_StopPenaltyHours                                         1.000000
+b_StopPenaltyHours_Shift_Business                         -0.212075
+b_Fare                                                     0.081269
+b_Legroom2                                                 0.005653
+b_Legroom3                                                -0.002443
+b_Legroom4                                                -0.006829
+b_DiffTime                                                 0.013966
+                                  b_StopPenaltyHours_Shift_Business
+asc_1Stop                                                 -0.020333
+asc_1StopChange                                           -0.069882
+asc_1StopChange_Shift_Income                               0.075025
+b_StopPenaltyHours                                        -0.212075
+b_StopPenaltyHours_Shift_Business                          1.000000
+b_Fare                                                     0.074613
+b_Legroom2                                                -0.029178
+b_Legroom3                                                -0.020595
+b_Legroom4                                                -0.004158
+b_DiffTime                                                 0.011274
+                                                             b_Fare
+asc_1Stop                                                   0.09581
+asc_1StopChange                                             0.12528
+asc_1StopChange_Shift_Income                               -0.06914
+b_StopPenaltyHours                                          0.08127
+b_StopPenaltyHours_Shift_Business                           0.07461
+b_Fare                                                      1.00000
+b_Legroom2                                                 -0.01347
+b_Legroom3                                                 -0.04835
+b_Legroom4                                                 -0.07962
+b_DiffTime                                                  0.07781
+                                                         b_Legroom2
+asc_1Stop                                                 -0.056542
+asc_1StopChange                                           -0.018855
+asc_1StopChange_Shift_Income                              -0.027916
+b_StopPenaltyHours                                         0.005653
+b_StopPenaltyHours_Shift_Business                         -0.029178
+b_Fare                                                    -0.013468
+b_Legroom2                                                 1.000000
+b_Legroom3                                                 0.496608
+b_Legroom4                                                 0.525835
+b_DiffTime                                                 0.004062
+                                                         b_Legroom3
+asc_1Stop                                                 -0.056718
+asc_1StopChange                                           -0.039430
+asc_1StopChange_Shift_Income                              -0.005582
+b_StopPenaltyHours                                        -0.002443
+b_StopPenaltyHours_Shift_Business                         -0.020595
+b_Fare                                                    -0.048348
+b_Legroom2                                                 0.496608
+b_Legroom3                                                 1.000000
+b_Legroom4                                                 0.543547
+b_DiffTime                                                -0.048838
+                                                         b_Legroom4
+asc_1Stop                                                 -0.073740
+asc_1StopChange                                           -0.074939
+asc_1StopChange_Shift_Income                               0.031346
+b_StopPenaltyHours                                        -0.006829
+b_StopPenaltyHours_Shift_Business                         -0.004158
+b_Fare                                                    -0.079625
+b_Legroom2                                                 0.525835
+b_Legroom3                                                 0.543547
+b_Legroom4                                                 1.000000
+b_DiffTime                                                -0.046939
+                                                         b_DiffTime
+asc_1Stop                                                  0.021293
+asc_1StopChange                                            0.020494
+asc_1StopChange_Shift_Income                               0.004178
+b_StopPenaltyHours                                         0.013966
+b_StopPenaltyHours_Shift_Business                          0.011274
+b_Fare                                                     0.077814
+b_Legroom2                                                 0.004062
+b_Legroom3                                                -0.048838
+b_Legroom4                                                -0.046939
+b_DiffTime                                                 1.000000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+  row Avg prob per choice
+ 1279         0.003826534
+  573         0.007948707
+  941         0.009780762
+ 2350         0.010455403
+ 1871         0.012339982
+ 2664         0.013534657
+  454         0.013993124
+ 2549         0.015437959
+  798         0.016913291
+ 2853         0.018286120
+  899         0.018353932
+ 2275         0.018424095
+ 1285         0.022954354
+   54         0.026859163
+ 2733         0.028399870
+ 1169         0.028426669
+ 2541         0.028771665
+   20         0.030342579
+  216         0.033251768
+ 2303         0.034293334
+
+Changes in parameter estimates from starting values:
+                                      Initial    Estimate  Difference
+asc_NonStop                             0.000     0.00000     0.00000
+asc_1Stop                               0.000    -1.36015    -1.36015
+asc_1StopChange                         0.000    -1.85871    -1.85871
+asc_1StopChange_Shift_Income            0.000     0.47003     0.47003
+b_StopPenaltyHours                      0.000    -0.26535    -0.26535
+b_StopPenaltyHours_Shift_Business       0.000    -0.31299    -0.31299
+b_Fare                                  0.000    -0.01951    -0.01951
+b_Legroom2                              0.000     0.38441     0.38441
+b_Legroom3                              0.000     0.42430     0.42430
+b_Legroom4                              0.000     0.66960     0.66960
+b_DiffTime                              0.000    -0.10913    -0.10913
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                        
+modelName              "MNL_Covariates"             
+modelDescr             "MNL model with interactions"
+indivID                "SubjectId"                  
+outputDirectory        "outputmodel2/"              
+panelData              "FALSE"                      
+debug                  "FALSE"                      
+nCores                 "1"                          
+workInLogs             "FALSE"                      
+seed                   "13"                         
+mixing                 "FALSE"                      
+HB                     "FALSE"                      
+noValidation           "FALSE"                      
+noDiagnostics          "FALSE"                      
+calculateLLC           "TRUE"                       
+analyticGrad           "TRUE"                       
+analyticGrad_manualSet "FALSE"                      
+
+Hessian routines attempted
+--------------
+numerical jacobian of LL analytical gradient
+
+Scaling in estimation
+--------------
+                                       Value
+asc_1Stop                         1.36014936
+asc_1StopChange                   1.85871447
+asc_1StopChange_Shift_Income      0.47003379
+b_StopPenaltyHours                0.26535105
+b_StopPenaltyHours_Shift_Business 0.31298874
+b_Fare                            0.01950911
+b_Legroom2                        0.38441041
+b_Legroom3                        0.42430098
+b_Legroom4                        0.66959757
+b_DiffTime                        0.10913290
+
+Scaling used in computing Hessian
+--------------
+                                       Value
+asc_1Stop                         1.36015091
+asc_1StopChange                   1.85870987
+asc_1StopChange_Shift_Income      0.47003375
+b_StopPenaltyHours                0.26535093
+b_StopPenaltyHours_Shift_Business 0.31298875
+b_Fare                            0.01950914
+b_Legroom2                        0.38441030
+b_Legroom3                        0.42430099
+b_Legroom4                        0.66959854
+b_DiffTime                        0.10913276
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### Create alternative specific constants and coefficients using interactions with socio-demographics
+  asc_1StopChange_Income = asc_1StopChange  + asc_1StopChange_Shift_Income * IncomeDummy
+  b_StopPenalty_Business = b_StopPenaltyHours + b_StopPenaltyHours_Shift_Business * BusinessTrip
+  
+  ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
+  V = list()
+  V[["NonStop"]]  = asc_NonStop + b_Fare * Fare_1 + b_Legroom2 * Legroom12 + b_Legroom3 * Legroom13 + b_Legroom4 * Legroom14 + b_DiffTime * DiffTime1
+  V[["OneStop"]]  = asc_1Stop + b_StopPenalty_Business * StopPenaltyHours_2  + b_Fare * Fare_2 + b_Legroom2 * Legroom22 + b_Legroom3 * Legroom23 + b_Legroom4 * Legroom24 + b_DiffTime * DiffTime2
+  V[["OneStopChange"]]  = asc_1StopChange_Income + b_StopPenalty_Business * StopPenaltyHours_3  + b_Fare * Fare_3 + b_Legroom2 * Legroom32 + b_Legroom3 * Legroom33 + b_Legroom4 * Legroom34 +  b_DiffTime * DiffTime3
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(NonStop =1, OneStop=2, OneStopChange=3), 
+    avail         = 1,
+    choiceVar     = Choice,
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  # P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
+<bytecode: 0x7ff365104cf0>

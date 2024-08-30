@@ -1,0 +1,31 @@
+"","NonStop","OneStop","OneStopChange"
+"Explanator 1 (BusinessTrip), mean when alt is chosen:",0.3121,0.2484,0.2176
+"Explanator 1 (BusinessTrip), mean when alt is not chosen:",0.2337,0.2952,0.2998
+"Explanator 1 (BusinessTrip), t-test (mean if chosen - mean if not chosen)",4.48,-2.14,-3.75
+"Explanator 2 (PartySize), mean when alt is chosen:",1.6819,1.7263,1.6898
+"Explanator 2 (PartySize), mean when alt is not chosen:",1.7089,1.6833,1.6905
+"Explanator 2 (PartySize), t-test (mean if chosen - mean if not chosen)",-0.68,0.85,-0.01
+"Explanator 3 (Income), mean when alt is chosen:",111.5025,107.1053,91.3079
+"Explanator 3 (Income), mean when alt is not chosen:",99.581,107.9005,110.6552
+"Explanator 3 (Income), t-test (mean if chosen - mean if not chosen)",3.56,-0.18,-5.08
+"Explanator 4 (IncomeDummy), mean when alt is chosen:",0.5829,0.6,0.6597
+"Explanator 4 (IncomeDummy), mean when alt is not chosen:",0.6284,0.5966,0.5862
+"Explanator 4 (IncomeDummy), t-test (mean if chosen - mean if not chosen)",-2.34,0.14,2.95
+"Explanator 5 (Female), mean when alt is chosen:",0.4628,0.4358,0.4375
+"Explanator 5 (Female), mean when alt is not chosen:",0.4366,0.4583,0.4576
+"Explanator 5 (Female), t-test (mean if chosen - mean if not chosen)",1.32,-0.9,-0.78
+"Explanator 6 (Undergraduate), mean when alt is chosen:",0.4804,0.4842,0.4861
+"Explanator 6 (Undergraduate), mean when alt is not chosen:",0.4851,0.4814,0.4811
+"Explanator 6 (Undergraduate), t-test (mean if chosen - mean if not chosen)",-0.24,0.11,0.19
+"Explanator 7 (Posgraduate), mean when alt is chosen:",0.3362,0.3411,0.3704
+"Explanator 7 (Posgraduate), mean when alt is not chosen:",0.355,0.3423,0.3371
+"Explanator 7 (Posgraduate), t-test (mean if chosen - mean if not chosen)",-0.99,-0.05,1.32
+"Explanator 8 (Age25_44), mean when alt is chosen:",0.609,0.5853,0.6319
+"Explanator 8 (Age25_44), mean when alt is not chosen:",0.6075,0.6131,0.6045
+"Explanator 8 (Age25_44), t-test (mean if chosen - mean if not chosen)",0.08,-1.13,1.09
+"Explanator 9 (Age45_54), mean when alt is chosen:",0.201,0.1811,0.1435
+"Explanator 9 (Age45_54), mean when alt is not chosen:",0.1632,0.1908,0.1972
+"Explanator 9 (Age45_54), t-test (mean if chosen - mean if not chosen)",2.49,-0.5,-2.87
+"Explanator 10 (Age55), mean when alt is chosen:",0.0985,0.1221,0.0972
+"Explanator 10 (Age55), mean when alt is not chosen:",0.1103,0.0983,0.103
+"Explanator 10 (Age55), t-test (mean if chosen - mean if not chosen)",-0.95,1.47,-0.37

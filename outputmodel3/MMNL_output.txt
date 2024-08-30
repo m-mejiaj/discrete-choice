@@ -1,0 +1,447 @@
+Model run by mmejiaj using Apollo 0.2.8 on R 4.2.2 for Darwin.
+www.ApolloChoiceModelling.com
+
+Model name                                  : MMNL
+Model description                           : Mixed Multinomial Logit Model
+Model run at                                : 2023-03-22 09:01:53
+Estimation method                           : bfgs
+Model diagnosis                             : successful convergence 
+Number of individuals                       : 2897
+Number of rows in database                  : 2897
+Number of modelled outcomes                 : 2897
+
+Number of cores used                        :  4 
+Number of inter-individual draws            : 500 (halton)
+WARNING: Inter-individual draws were used
+         without a panel data structure.
+
+LL(start)                                   : -3068.92
+LL at equal shares, LL(0)                   : -3182.68
+LL at observed shares, LL(C)                : -2428.28
+LL(final)                                   : -1838.88
+Rho-squared vs equal shares                  :  0.4222 
+Adj.Rho-squared vs equal shares              :  0.4191 
+Rho-squared vs observed shares               :  0.2427 
+Adj.Rho-squared vs observed shares           :  0.2386 
+AIC                                         :  3697.76 
+BIC                                         :  3757.48 
+
+Estimated parameters                        :  10
+Time taken (hh:mm:ss)                       :  00:03:20.45 
+     pre-estimation                         :  00:00:49.08 
+     estimation                             :  00:01:19.95 
+     post-estimation                        :  00:01:11.42 
+Iterations                                  :  51  
+Min abs eigenvalue of Hessian               :  1.309666 
+
+Unconstrained optimisation.
+
+These outputs have had the scaling used in estimation applied to them.
+Estimates:
+                              Estimate        s.e.   t.rat.(0)  p(2-sided)    Rob.s.e.
+asc_NonStop                    0.00000          NA          NA          NA          NA
+asc_1Stop                     -0.96347    0.181551      -5.307   1.115e-07    0.183754
+asc_1StopChange               -1.25711    0.180991      -6.946   3.767e-12    0.184582
+mu_log_StopPenaltyHours       -0.60378    0.484699      -1.246      0.2129    0.503495
+sigma_log_StopPenaltyHours    -3.75654    0.672575      -5.585   2.333e-08    0.700069
+b_Fare                        -0.03579    0.002328     -15.372      0.0000    0.002998
+b_Legroom2                     0.52818    0.134950       3.914   9.084e-05    0.133771
+b_Legroom3                     0.61701    0.139932       4.409   1.037e-05    0.143514
+b_Legroom4                     0.96559    0.135617       7.120   1.079e-12    0.142080
+mu_log_DiffTime               -3.07108    0.367076      -8.366      0.0000    0.376922
+sigma_log_DiffTime            -2.23690    0.313324      -7.139   9.386e-13    0.323117
+                           Rob.t.rat.(0)  p(2-sided)
+asc_NonStop                           NA          NA
+asc_1Stop                         -5.243   1.578e-07
+asc_1StopChange                   -6.811   9.722e-12
+mu_log_StopPenaltyHours           -1.199      0.2305
+sigma_log_StopPenaltyHours        -5.366   8.052e-08
+b_Fare                           -11.939      0.0000
+b_Legroom2                         3.948   7.869e-05
+b_Legroom3                         4.299   1.713e-05
+b_Legroom4                         6.796   1.075e-11
+mu_log_DiffTime                   -8.148   4.441e-16
+sigma_log_DiffTime                -6.923   4.426e-12
+
+
+Overview of choices for MNL model component :
+                                 NonStop OneStop OneStopChange
+Times available                  2897.00  2897.0       2897.00
+Times chosen                     1990.00   475.0        432.00
+Percentage chosen overall          68.69    16.4         14.91
+Percentage chosen when available   68.69    16.4         14.91
+
+
+Classical covariance matrix:
+                                            asc_1Stop            asc_1StopChange
+asc_1Stop                                    0.032961                    0.02791
+asc_1StopChange                              0.027905                    0.03276
+mu_log_StopPenaltyHours                      0.074905                    0.07245
+sigma_log_StopPenaltyHours                   0.079705                    0.07999
+b_Fare                                     -7.900e-05                 -4.754e-05
+b_Legroom2                                   0.001072                 6.9377e-04
+b_Legroom3                                   0.001201                 6.3147e-04
+b_Legroom4                                   0.001721                 6.6127e-04
+mu_log_DiffTime                              0.020377                    0.02057
+sigma_log_DiffTime                           0.019032                    0.02020
+                              mu_log_StopPenaltyHours sigma_log_StopPenaltyHours
+asc_1Stop                                    0.074905                   0.079705
+asc_1StopChange                              0.072452                   0.079995
+mu_log_StopPenaltyHours                      0.234933                   0.257536
+sigma_log_StopPenaltyHours                   0.257536                   0.452358
+b_Fare                                    -3.7456e-04                  6.874e-05
+b_Legroom2                                   0.004496                   0.001383
+b_Legroom3                                   0.006547                   0.004146
+b_Legroom4                                   0.007761                   0.001986
+mu_log_DiffTime                              0.069903                   0.149555
+sigma_log_DiffTime                           0.060438                   0.158570
+                                               b_Fare                 b_Legroom2
+asc_1Stop                                  -7.900e-05                   0.001072
+asc_1StopChange                            -4.754e-05                 6.9377e-04
+mu_log_StopPenaltyHours                   -3.7456e-04                   0.004496
+sigma_log_StopPenaltyHours                  6.874e-05                   0.001383
+b_Fare                                      5.421e-06                 -2.902e-05
+b_Legroom2                                 -2.902e-05                   0.018212
+b_Legroom3                                 -3.899e-05                   0.009086
+b_Legroom4                                 -6.504e-05                   0.009084
+mu_log_DiffTime                             2.150e-05                 6.6356e-04
+sigma_log_DiffTime                         1.6979e-04                -5.9554e-04
+                                           b_Legroom3                 b_Legroom4
+asc_1Stop                                    0.001201                   0.001721
+asc_1StopChange                            6.3147e-04                 6.6127e-04
+mu_log_StopPenaltyHours                      0.006547                   0.007761
+sigma_log_StopPenaltyHours                   0.004146                   0.001986
+b_Fare                                     -3.899e-05                 -6.504e-05
+b_Legroom2                                   0.009086                   0.009084
+b_Legroom3                                   0.019581                   0.010425
+b_Legroom4                                   0.010425                   0.018392
+mu_log_DiffTime                              0.003395                   0.002256
+sigma_log_DiffTime                         8.2283e-04                -7.8933e-04
+                                      mu_log_DiffTime         sigma_log_DiffTime
+asc_1Stop                                    0.020377                    0.01903
+asc_1StopChange                              0.020567                    0.02020
+mu_log_StopPenaltyHours                      0.069903                    0.06044
+sigma_log_StopPenaltyHours                   0.149555                    0.15857
+b_Fare                                      2.150e-05                 1.6979e-04
+b_Legroom2                                 6.6356e-04                -5.9554e-04
+b_Legroom3                                   0.003395                 8.2283e-04
+b_Legroom4                                   0.002256                -7.8933e-04
+mu_log_DiffTime                              0.134745                    0.10184
+sigma_log_DiffTime                           0.101840                    0.09817
+
+Robust covariance matrix:
+                                            asc_1Stop            asc_1StopChange
+asc_1Stop                                    0.033766                    0.02930
+asc_1StopChange                              0.029296                    0.03407
+mu_log_StopPenaltyHours                      0.078530                    0.07734
+sigma_log_StopPenaltyHours                   0.091288                    0.09092
+b_Fare                                     -5.846e-05                 -4.606e-05
+b_Legroom2                                 1.8595e-04                 3.2693e-04
+b_Legroom3                                 9.9746e-04                 6.1186e-04
+b_Legroom4                                   0.001395                 6.6625e-04
+mu_log_DiffTime                              0.028455                    0.02770
+sigma_log_DiffTime                           0.026429                    0.02636
+                              mu_log_StopPenaltyHours sigma_log_StopPenaltyHours
+asc_1Stop                                    0.078530                   0.091288
+asc_1StopChange                              0.077340                   0.090921
+mu_log_StopPenaltyHours                      0.253507                   0.279479
+sigma_log_StopPenaltyHours                   0.279479                   0.490097
+b_Fare                                    -5.0432e-04                 1.9150e-04
+b_Legroom2                                   0.003652                   0.004281
+b_Legroom3                                   0.007133                   0.006726
+b_Legroom4                                   0.010119                   0.005503
+mu_log_DiffTime                              0.097436                   0.195188
+sigma_log_DiffTime                           0.079696                   0.200808
+                                               b_Fare                 b_Legroom2
+asc_1Stop                                  -5.846e-05                 1.8595e-04
+asc_1StopChange                            -4.606e-05                 3.2693e-04
+mu_log_StopPenaltyHours                   -5.0432e-04                   0.003652
+sigma_log_StopPenaltyHours                 1.9150e-04                   0.004281
+b_Fare                                      8.987e-06                 -1.048e-05
+b_Legroom2                                 -1.048e-05                   0.017895
+b_Legroom3                                 -3.400e-05                   0.009452
+b_Legroom4                                 -8.830e-05                   0.009768
+mu_log_DiffTime                             7.203e-06                   0.002724
+sigma_log_DiffTime                         2.5923e-04                   0.001651
+                                           b_Legroom3                 b_Legroom4
+asc_1Stop                                  9.9746e-04                   0.001395
+asc_1StopChange                            6.1186e-04                 6.6625e-04
+mu_log_StopPenaltyHours                      0.007133                   0.010119
+sigma_log_StopPenaltyHours                   0.006726                   0.005503
+b_Fare                                     -3.400e-05                 -8.830e-05
+b_Legroom2                                   0.009452                   0.009768
+b_Legroom3                                   0.020596                   0.012187
+b_Legroom4                                   0.012187                   0.020187
+mu_log_DiffTime                              0.005806                   0.006371
+sigma_log_DiffTime                           0.002758                   0.001444
+                                      mu_log_DiffTime         sigma_log_DiffTime
+asc_1Stop                                    0.028455                   0.026429
+asc_1StopChange                              0.027697                   0.026357
+mu_log_StopPenaltyHours                      0.097436                   0.079696
+sigma_log_StopPenaltyHours                   0.195188                   0.200808
+b_Fare                                      7.203e-06                 2.5923e-04
+b_Legroom2                                   0.002724                   0.001651
+b_Legroom3                                   0.005806                   0.002758
+b_Legroom4                                   0.006371                   0.001444
+mu_log_DiffTime                              0.142070                   0.107406
+sigma_log_DiffTime                           0.107406                   0.104405
+
+Classical correlation matrix:
+                                            asc_1Stop            asc_1StopChange
+asc_1Stop                                     1.00000                    0.84924
+asc_1StopChange                               0.84924                    1.00000
+mu_log_StopPenaltyHours                       0.85122                    0.82589
+sigma_log_StopPenaltyHours                    0.65275                    0.65715
+b_Fare                                       -0.18690                   -0.11282
+b_Legroom2                                    0.04377                    0.02840
+b_Legroom3                                    0.04729                    0.02493
+b_Legroom4                                    0.06992                    0.02694
+mu_log_DiffTime                               0.30577                    0.30957
+sigma_log_DiffTime                            0.33457                    0.35629
+                              mu_log_StopPenaltyHours sigma_log_StopPenaltyHours
+asc_1Stop                                     0.85122                    0.65275
+asc_1StopChange                               0.82589                    0.65715
+mu_log_StopPenaltyHours                       1.00000                    0.79000
+sigma_log_StopPenaltyHours                    0.79000                    1.00000
+b_Fare                                       -0.33191                    0.04390
+b_Legroom2                                    0.06874                    0.01524
+b_Legroom3                                    0.09653                    0.04405
+b_Legroom4                                    0.11806                    0.02177
+mu_log_DiffTime                               0.39289                    0.60577
+sigma_log_DiffTime                            0.39796                    0.75246
+                                               b_Fare                 b_Legroom2
+asc_1Stop                                    -0.18690                    0.04377
+asc_1StopChange                              -0.11282                    0.02840
+mu_log_StopPenaltyHours                      -0.33191                    0.06874
+sigma_log_StopPenaltyHours                    0.04390                    0.01524
+b_Fare                                        1.00000                   -0.09237
+b_Legroom2                                   -0.09237                    1.00000
+b_Legroom3                                   -0.11966                    0.48116
+b_Legroom4                                   -0.20599                    0.49638
+mu_log_DiffTime                               0.02515                    0.01340
+sigma_log_DiffTime                            0.23274                   -0.01408
+                                           b_Legroom3                 b_Legroom4
+asc_1Stop                                     0.04729                    0.06992
+asc_1StopChange                               0.02493                    0.02694
+mu_log_StopPenaltyHours                       0.09653                    0.11806
+sigma_log_StopPenaltyHours                    0.04405                    0.02177
+b_Fare                                       -0.11966                   -0.20599
+b_Legroom2                                    0.48116                    0.49638
+b_Legroom3                                    1.00000                    0.54934
+b_Legroom4                                    0.54934                    1.00000
+mu_log_DiffTime                               0.06609                    0.04531
+sigma_log_DiffTime                            0.01877                   -0.01858
+                                      mu_log_DiffTime         sigma_log_DiffTime
+asc_1Stop                                     0.30577                    0.33457
+asc_1StopChange                               0.30957                    0.35629
+mu_log_StopPenaltyHours                       0.39289                    0.39796
+sigma_log_StopPenaltyHours                    0.60577                    0.75246
+b_Fare                                        0.02515                    0.23274
+b_Legroom2                                    0.01340                   -0.01408
+b_Legroom3                                    0.06609                    0.01877
+b_Legroom4                                    0.04531                   -0.01858
+mu_log_DiffTime                               1.00000                    0.88546
+sigma_log_DiffTime                            0.88546                    1.00000
+
+Robust correlation matrix:
+                                            asc_1Stop            asc_1StopChange
+asc_1Stop                                    1.000000                    0.86374
+asc_1StopChange                              0.863737                    1.00000
+mu_log_StopPenaltyHours                      0.848800                    0.83218
+sigma_log_StopPenaltyHours                   0.709635                    0.70361
+b_Fare                                      -0.106126                   -0.08324
+b_Legroom2                                   0.007565                    0.01324
+b_Legroom3                                   0.037824                    0.02310
+b_Legroom4                                   0.053449                    0.02540
+mu_log_DiffTime                              0.410835                    0.39810
+sigma_log_DiffTime                           0.445118                    0.44192
+                              mu_log_StopPenaltyHours sigma_log_StopPenaltyHours
+asc_1Stop                                     0.84880                    0.70963
+asc_1StopChange                               0.83218                    0.70361
+mu_log_StopPenaltyHours                       1.00000                    0.79289
+sigma_log_StopPenaltyHours                    0.79289                    1.00000
+b_Fare                                       -0.33412                    0.09125
+b_Legroom2                                    0.05423                    0.04571
+b_Legroom3                                    0.09871                    0.06695
+b_Legroom4                                    0.14146                    0.05533
+mu_log_DiffTime                               0.51342                    0.73971
+sigma_log_DiffTime                            0.48987                    0.88773
+                                               b_Fare                 b_Legroom2
+asc_1Stop                                   -0.106126                   0.007565
+asc_1StopChange                             -0.083236                   0.013241
+mu_log_StopPenaltyHours                     -0.334116                   0.054228
+sigma_log_StopPenaltyHours                   0.091249                   0.045710
+b_Fare                                       1.000000                  -0.026123
+b_Legroom2                                  -0.026123                   1.000000
+b_Legroom3                                  -0.079034                   0.492346
+b_Legroom4                                  -0.207312                   0.513934
+mu_log_DiffTime                              0.006375                   0.054030
+sigma_log_DiffTime                           0.267615                   0.038197
+                                           b_Legroom3                 b_Legroom4
+asc_1Stop                                     0.03782                    0.05345
+asc_1StopChange                               0.02310                    0.02540
+mu_log_StopPenaltyHours                       0.09871                    0.14146
+sigma_log_StopPenaltyHours                    0.06695                    0.05533
+b_Fare                                       -0.07903                   -0.20731
+b_Legroom2                                    0.49235                    0.51393
+b_Legroom3                                    1.00000                    0.59767
+b_Legroom4                                    0.59767                    1.00000
+mu_log_DiffTime                               0.10733                    0.11896
+sigma_log_DiffTime                            0.05947                    0.03146
+                                      mu_log_DiffTime         sigma_log_DiffTime
+asc_1Stop                                    0.410835                    0.44512
+asc_1StopChange                              0.398104                    0.44192
+mu_log_StopPenaltyHours                      0.513421                    0.48987
+sigma_log_StopPenaltyHours                   0.739708                    0.88773
+b_Fare                                       0.006375                    0.26761
+b_Legroom2                                   0.054030                    0.03820
+b_Legroom3                                   0.107330                    0.05947
+b_Legroom4                                   0.118958                    0.03146
+mu_log_DiffTime                              1.000000                    0.88189
+sigma_log_DiffTime                           0.881892                    1.00000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+  row Avg prob per choice
+ 1279        0.0003032068
+  941        0.0008122765
+ 2664        0.0008136363
+  573        0.0024327149
+ 1871        0.0026079244
+ 2853        0.0034395775
+ 2549        0.0036446628
+ 1558        0.0051163780
+  216        0.0063207208
+ 1169        0.0081177589
+ 2628        0.0099750651
+ 2733        0.0115041997
+ 2275        0.0119511409
+ 3288        0.0151495880
+ 2350        0.0177717762
+ 2712        0.0202036268
+ 2541        0.0207183434
+  549        0.0229923187
+  899        0.0249735826
+  727        0.0257592712
+
+Changes in parameter estimates from starting values:
+                               Initial    Estimate  Difference
+asc_NonStop                    0.00000     0.00000     0.00000
+asc_1Stop                      0.00000    -0.96347    -0.96347
+asc_1StopChange                0.00000    -1.25711    -1.25711
+mu_log_StopPenaltyHours       -3.00000    -0.60378     2.39622
+sigma_log_StopPenaltyHours    -0.01000    -3.75654    -3.74654
+b_Fare                         0.00000    -0.03579    -0.03579
+b_Legroom2                     0.00000     0.52818     0.52818
+b_Legroom3                     0.00000     0.61701     0.61701
+b_Legroom4                     0.00000     0.96559     0.96559
+mu_log_DiffTime               -3.00000    -3.07108    -0.07108
+sigma_log_DiffTime            -0.01000    -2.23690    -2.22690
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                          
+modelName              "MMNL"                         
+modelDescr             "Mixed Multinomial Logit Model"
+indivID                "SubjectId"                    
+outputDirectory        "outputmodel3/"                
+mixing                 "TRUE"                         
+panelData              "FALSE"                        
+nCores                 "4"                            
+debug                  "FALSE"                        
+workInLogs             "FALSE"                        
+seed                   "13"                           
+HB                     "FALSE"                        
+noValidation           "FALSE"                        
+noDiagnostics          "FALSE"                        
+calculateLLC           "TRUE"                         
+analyticGrad           "TRUE"                         
+analyticGrad_manualSet "FALSE"                        
+
+Hessian routines attempted
+--------------
+numerical jacobian of LL analytical gradient
+
+Scaling in estimation
+--------------
+                                Value
+asc_1Stop                  0.96349103
+asc_1StopChange            1.25719391
+mu_log_StopPenaltyHours    0.60376003
+sigma_log_StopPenaltyHours 3.75724296
+b_Fare                     0.03579073
+b_Legroom2                 0.52817224
+b_Legroom3                 0.61701599
+b_Legroom4                 0.96558514
+mu_log_DiffTime            3.07177157
+sigma_log_DiffTime         2.23638652
+
+Scaling used in computing Hessian
+--------------
+                               Value
+asc_1Stop                  0.9634695
+asc_1StopChange            1.2571074
+mu_log_StopPenaltyHours    0.6037843
+sigma_log_StopPenaltyHours 3.7565434
+b_Fare                     0.0357908
+b_Legroom2                 0.5281755
+b_Legroom3                 0.6170114
+b_Legroom4                 0.9655883
+mu_log_DiffTime            3.0710841
+sigma_log_DiffTime         2.2368974
+
+
+apollo_randCoeff
+----------------
+function(apollo_beta, apollo_inputs){
+  randcoeff = list()
+  
+  randcoeff[["b_StopPenalty"]] = -exp(mu_log_StopPenaltyHours + sigma_log_StopPenaltyHours * draws_StopPenalty) 
+  #randcoeff[["b_Fare"]] = -exp( mu_log_Fare + sigma_log_Fare * draws_Fare )
+  randcoeff[["b_DiffTime"]] = -exp( mu_log_DiffTime + sigma_log_DiffTime * draws_DiffTime )
+  
+  return(randcoeff)
+}
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### List of utilities: these must use the same names as in mnl_settings, order is irrelevant
+  V = list()
+  V[["NonStop"]]  = asc_NonStop + b_Fare * Fare_1 + b_Legroom2 * Legroom12 + b_Legroom3 * Legroom13 + b_Legroom4 * Legroom14 + b_DiffTime * DiffTime1
+  V[["OneStop"]]  = asc_1Stop + b_StopPenalty * StopPenaltyHours_2  + b_Fare * Fare_2 + b_Legroom2 * Legroom22 + b_Legroom3 * Legroom23 + b_Legroom4 * Legroom24 + b_DiffTime * DiffTime2
+  V[["OneStopChange"]]  = asc_1StopChange + b_StopPenalty * StopPenaltyHours_3  + b_Fare * Fare_3 + b_Legroom2 * Legroom32 + b_Legroom3 * Legroom33 + b_Legroom4 * Legroom34 +  b_DiffTime * DiffTime3
+  
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(NonStop =1, OneStop=2, OneStopChange=3), 
+    avail         = 1,
+    choiceVar     = Choice,
+    utilities     = V
+  )
+  
+  ### Compute probabilities using MNL model
+  P[["model"]] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  #P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Average across inter-individual draws
+  P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
+<bytecode: 0x7ff35433a028>
